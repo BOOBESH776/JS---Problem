@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script lang="javascript">
+
+        // 2. Student Grade Calculation (Conditional + Loops) 
+
+        var studentName = prompt("Enter the student's name:");
+
+        var sub = prompt("How Many Subjects? Do You Have");
+
+        for (let i = 0; i < sub; i++) {
+            var subjectName = prompt("Enter the name of subject " + (i + 1) + ":");
+            var marks = parseFloat(prompt("Enter the marks obtained in " + subjectName + ":"));
+
+            var grade;
+
+            if (marks >= 90) {
+                grade = 'A';
+            } else if (marks >= 80) {
+                grade = 'B';
+            } else if (marks >= 70) {
+                grade = 'C';
+            } else if (marks >= 60) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+
+            document.write(studentName + " scored " + marks + " in " + subjectName + " and received a grade of " + grade);
+        }
+    </script>
+</body>
+
+</html>

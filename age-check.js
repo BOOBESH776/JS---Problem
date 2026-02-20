@@ -1,4 +1,4 @@
-// Employee Age Check
+//1. Employee Age Check
 
 // var age = prompt("enter your age:");
 
