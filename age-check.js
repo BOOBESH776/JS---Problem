@@ -1,6 +1,8 @@
 // Employee Age Check
 
-var age = prompt("enter your age:");
+// var age = prompt("enter your age:");
+
+var age =25;
 
 if(age<18){
     console.log("Not Eligiable to Work");
