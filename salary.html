@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script lang="javascript">
+        let employees = [
+            { name: "John", salary: 50000 },
+            { name: "Mary", salary: 65000 },
+            { name: "Sam", salary: 45000 }
+        ];
+
+        employees.forEach(employee => {
+            document.write("" + employee.name + " has a salary of " + employee.salary + "<br>");
+        });
+        document.write("<br>");
+        employees.forEach(employee => {
+            if(employee.salary > 60000) {
+                document.write("" + employee.name + " is a high earner with a salary.");
+            }
+        });
+    </script>
+</body>
+
+</html>
