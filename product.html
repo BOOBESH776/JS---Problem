@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        let products = ["Laptop", "Phone", "Tablet", "Headphones"]; 
+
+        var user = prompt("Enter the Product Name You Want To Buy");
+
+        if(products.includes(user)){  //includes() method checks if the specified element exists in the array and returns true or false accordingly.
+            document.write("Product is Available");
+        }
+        else{
+            document.write("Product is Not Available");
+        }
+    </script>
+</body>
+</html>
