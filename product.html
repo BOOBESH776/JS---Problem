@@ -11,12 +11,35 @@
 
         var user = prompt("Enter the Product Name You Want To Buy");
 
+        //with includes() method
+
         if(products.includes(user)){  //includes() method checks if the specified element exists in the array and returns true or false accordingly.
             document.write("Product is Available");
         }
         else{
             document.write("Product is Not Available");
         }
+
+
+        // without includes() method
+
+        if(products[0] == user){
+            document.write("Product is Available");
+        }
+        else if(products[1] == user){
+            document.write("Product is Available");
+        }
+        else if(products[2] == user){
+            document.write("Product is Available");
+        }
+        else if(products[3] == user){
+            document.write("Product is Available");
+        }
+        else{
+            document.write("Product is Not Available");
+        }
+
+
     </script>
 </body>
 </html>
