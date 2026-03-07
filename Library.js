@@ -6,7 +6,7 @@ let books = [
     { id: 3, title: "MongoDB Guide", available: true }
 ];
 
-var i = 1;
+var i = 2;
 
     if(books[i]){
         console.log("Book is available");
