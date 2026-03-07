@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="subject_1" placeholder="Enter Your Mark"><br><br>
+    <input type="text" id="subject_2" placeholder="Enter Your Mark"><br><br>
+    <input type="text" id="subject_3" placeholder="Enter Your Mark"><br><br>
+    <input type="text" id="subject_4" placeholder="Enter Your Mark"><br><br>
+    <input type="text" id="subject_5" placeholder="Enter Your Mark"><br><br>
+    <input type="button" onclick="calculate()" value="Submit">
+    <p id="result"></p>
+
+    <script lang="javascript">
+        function calculate() {
+            let sub_1 = Number(document.getElementById("subject_1").value);
+            let sub_2 = Number(document.getElementById("subject_2").value);
+            let sub_3 = Number(document.getElementById("subject_3").value);
+            let sub_4 = Number(document.getElementById("subject_4").value);
+            let sub_5 = Number(document.getElementById("subject_5").value);
+
+            let total = sub_1 + sub_2 + sub_3 + sub_4 + sub_5;
+
+            let avg = total / 5;
+
+            if (avg >= 90) {
+                let result = document.getElementById("result").textContent = "Result : a";
+            }
+
+            else if (avg >= 75 && avg <= 89) {
+                let result = document.getElementById("result").textContent = "Result : b";
+
+            }
+
+            else if (avg >= 50 && avg <= 74) {
+                let result = document.getElementById("result").textContent = "Result : c";
+
+            }
+
+            else {
+                let result = document.getElementById("result").textContent = "Result : fail";
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
