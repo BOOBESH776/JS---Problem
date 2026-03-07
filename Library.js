@@ -8,9 +8,9 @@ let books = [
 
 var i = 2;
 
-
     if(books[i]){
         console.log("Book is available");
+        console.log(books[i].title);
     }
     else{
         console.log("Book is not available");
