@@ -10,7 +10,7 @@ var i = 1;
 
     if(books[i]){
         console.log("Book is available");
-        console.log("Book Name : "+books[i].title);
+        console.log("Book Name :"+books[i].title);
     }
     else{
         console.log("Book is not available");
